@@ -10,11 +10,11 @@ class Locators:
 
 # Constructor
     CONSTRUCTOR_TITLE = (By.XPATH, "//h1[contains(text(),'Соберите бургер')]") # Заголовок конструктора
-    BUNS_BUTTON = (By.XPATH, "//span[contains(text(),'Булки')]") # Кнопка раздела «Булки»
+    BUNS_BUTTON = (By.XPATH, ".//span[text()='Булки']/parent::div") # Кнопка раздела «Булки»
     BUNS_TITLE = (By.XPATH, "//h2[contains(text(),'Булки')]") # Заголовок раздела «Булки»
-    SAUCES_BUTTON = (By.XPATH, "//span[contains(text(),'Соусы')]") # Кнопка раздела «Соусы»
+    SAUCES_BUTTON = (By.XPATH, ".//span[text()='Соусы']/parent::div") # Кнопка раздела «Соусы»
     SAUCES_TITLE = (By.XPATH, "//h2[contains(text(),'Соусы')]") # Заголовок раздела «Соусы»
-    FILLINGS_BUTTON = (By.XPATH, "//span[contains(text(),'Начинки')]") # Кнопка раздела «Начинки»
+    FILLINGS_BUTTON = (By.XPATH, ".//span[text()='Начинки']/parent::div") # Кнопка раздела «Начинки»
     FILLINGS_TITLE = (By.XPATH, "//h2[contains(text(),'Начинки')]") # Заголовок раздела «Начинки»
 
 #   Authentication
